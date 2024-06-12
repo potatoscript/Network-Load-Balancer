@@ -29,7 +29,7 @@ Install-WindowsFeature -name NLB -IncludeManagementTools
 - [Installation](#installation)
 - [Database Server](#database-server)
 
-## Introduction
+## Introduction [Home](#table-of-contents)
 
 A network load balancer (NLB) is a device or software application that efficiently distributes incoming network traffic across multiple servers or backend resources. Its primary purpose is to enhance the availability and reliability of applications and websites by ensuring that no single server becomes overwhelmed with traffic.
 
@@ -49,7 +49,7 @@ Here are some key features and characteristics of network load balancers:
 
 Overall, network load balancers play a crucial role in optimizing the performance, reliability, and scalability of modern web applications and services by efficiently distributing incoming traffic across multiple servers or resources.
 
-## Installation
+## Installation [Home](#table-of-contents)
 
 1. **Install your web application on one IIS server (let's call it Server A)**: This is where your web application is initially deployed and running.
 
@@ -79,7 +79,7 @@ Your web application will automatically run on Server B when Server A is down, t
 
 This setup provides high availability and ensures uninterrupted access to your web application for users.
 
-## Database Server
+## Database Server [Home](#table-of-contents)
 The database is often installed on a separate server (or servers) that is independent of the web servers (Server A and Server B). This ensures that the database remains accessible even if one of the web servers goes down.
 
 Here's how it usually works:
