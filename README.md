@@ -58,19 +58,24 @@ Overall, network load balancers play a crucial role in optimizing the performanc
 1. **Install your web application on one IIS server (let's call it Server A)**: This is where your web application is initially deployed and running.
 
 2. **Create a cluster at Server A**: In a Windows Server environment, you can create a server cluster using technologies like Windows Server Failover Clustering (WSFC). This cluster groups Server A with another server (Server B) to provide high availability and fault tolerance.
-
+<details>
+  <summary>Click to continue（続きを読む）...</summary>
+  <br>
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB01.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB02.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB03.png?raw=true" />
-
+</details>
 Or you can just use PowerShell to create a cluster on the server, as shown in the diagram below.
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB04.png?raw=true" />
 
 3. **Set up a network load balancer (NLB) on Server A**: You configure the NLB to distribute incoming traffic between Server A and Server B. The NLB monitors the health of both servers.
+<details>
+  <summary>Click to continue（続きを読む）...</summary>
+  <br>
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB05.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB06.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB07.png?raw=true" />
-
+</details>
 4. **Register Server B in the Server A cluster**: Server B is part of the cluster, so it's aware of the resources and configurations defined in the cluster.
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB08.png?raw=true" />
 If Server A goes down or becomes unavailable:
