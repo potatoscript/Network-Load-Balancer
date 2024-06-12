@@ -27,7 +27,7 @@ Install-WindowsFeature -name NLB -IncludeManagementTools
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Database Server](#database_server)
+- [Database Server](#database-server)
 
 ## Introduction
 
@@ -59,10 +59,16 @@ Overall, network load balancers play a crucial role in optimizing the performanc
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB02.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB03.png?raw=true" />
 
+Or you can just use PowerShell to create a cluster on the server, as shown in the diagram below.
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB04.png?raw=true" />
+
 3. **Set up a network load balancer (NLB) on Server A**: You configure the NLB to distribute incoming traffic between Server A and Server B. The NLB monitors the health of both servers.
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB05.png?raw=true" />
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB06.png?raw=true" />
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB07.png?raw=true" />
 
 4. **Register Server B in the Server A cluster**: Server B is part of the cluster, so it's aware of the resources and configurations defined in the cluster.
-
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB08.png?raw=true" />
 If Server A goes down or becomes unavailable:
 
 - The NLB detects the failure or unavailability of Server A through health checks.
