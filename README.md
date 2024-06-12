@@ -50,6 +50,7 @@ Here are some key features and characteristics of network load balancers:
 
 6. **SSL Termination**: Many NLBs offer SSL termination, allowing them to offload SSL encryption and decryption tasks from backend servers. This improves performance and simplifies management of SSL certificates.
 </details>
+
 Overall, network load balancers play a crucial role in optimizing the performance, reliability, and scalability of modern web applications and services by efficiently distributing incoming traffic across multiple servers or resources.
 
 ## Installation 
@@ -76,6 +77,7 @@ Or you can just use PowerShell to create a cluster on the server, as shown in th
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB06.png?raw=true" />
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB07.png?raw=true" />
 </details>
+
 4. **Register Server B in the Server A cluster**: Server B is part of the cluster, so it's aware of the resources and configurations defined in the cluster.
 <img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB08.png?raw=true" />
 If Server A goes down or becomes unavailable:
