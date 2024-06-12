@@ -33,7 +33,9 @@ Install-WindowsFeature -name NLB -IncludeManagementTools
 [back](#table-of-contents)
 
 A network load balancer (NLB) is a device or software application that efficiently distributes incoming network traffic across multiple servers or backend resources. Its primary purpose is to enhance the availability and reliability of applications and websites by ensuring that no single server becomes overwhelmed with traffic.
-
+<details>
+  <summary>Click to continue（続きを読む）...</summary>
+  <br>
 Here are some key features and characteristics of network load balancers:
 
 1. **Traffic Distribution**: NLBs distribute incoming network traffic across multiple servers or resources based on predefined rules or algorithms. This helps in optimizing resource utilization and improving response times for clients.
@@ -47,7 +49,7 @@ Here are some key features and characteristics of network load balancers:
 5. **Health Checks**: NLBs continuously monitor the health and availability of backend servers by sending periodic health checks. If a server is detected as unhealthy, the load balancer stops routing traffic to it until it becomes healthy again.
 
 6. **SSL Termination**: Many NLBs offer SSL termination, allowing them to offload SSL encryption and decryption tasks from backend servers. This improves performance and simplifies management of SSL certificates.
-
+</details>
 Overall, network load balancers play a crucial role in optimizing the performance, reliability, and scalability of modern web applications and services by efficiently distributing incoming traffic across multiple servers or resources.
 
 ## Installation 
@@ -83,6 +85,7 @@ This setup provides high availability and ensures uninterrupted access to your w
 
 ## Database Server 
 [back](#table-of-contents)
+
 The database is often installed on a separate server (or servers) that is independent of the web servers (Server A and Server B). This ensures that the database remains accessible even if one of the web servers goes down.
 
 Here's how it usually works:
