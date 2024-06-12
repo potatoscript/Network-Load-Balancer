@@ -1,5 +1,5 @@
 # Network-Load-Balancer
-
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB.png?raw=true" />
 NLBは「Network Load Balancer（ネットワークロードバランサー）」の略で、ネットワークトラフィックを複数のサーバーに均等に分散させるための装置やソフトウェアのことです。これにより、特定のサーバーに過度の負荷がかかるのを防ぎ、システム全体のパフォーマンスと可用性を向上させることができます。
 <details>
   <summary>Click to continue（続きを読む）...</summary>
