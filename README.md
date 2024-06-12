@@ -1,7 +1,9 @@
 # Network-Load-Balancer
 
 NLBは「Network Load Balancer（ネットワークロードバランサー）」の略で、ネットワークトラフィックを複数のサーバーに均等に分散させるための装置やソフトウェアのことです。これにより、特定のサーバーに過度の負荷がかかるのを防ぎ、システム全体のパフォーマンスと可用性を向上させることができます。
-
+<details>
+  <summary>Click to continue（続きを読む）...</summary>
+  <br>
 NLBが必要な理由は以下の通りです：
 
 1. **負荷分散**: ネットワークトラフィックを複数のサーバーに分散させることで、特定のサーバーに過度の負荷がかかるのを防ぎます。これにより、システム全体のパフォーマンスが向上します。
@@ -19,6 +21,15 @@ Install-WindowsFeature -name NLB -IncludeManagementTools
 ```
 
 このコマンドにより、NLB機能とその管理ツールがWindows Serverにインストールされ、NLBクラスターの設定と管理が可能になります。
+</details>
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Database Server](#database_server)
+
+## Introduction
 
 A network load balancer (NLB) is a device or software application that efficiently distributes incoming network traffic across multiple servers or backend resources. Its primary purpose is to enhance the availability and reliability of applications and websites by ensuring that no single server becomes overwhelmed with traffic.
 
@@ -38,11 +49,15 @@ Here are some key features and characteristics of network load balancers:
 
 Overall, network load balancers play a crucial role in optimizing the performance, reliability, and scalability of modern web applications and services by efficiently distributing incoming traffic across multiple servers or resources.
 
-Here's how it generally works:
+## Installation
 
 1. **Install your web application on one IIS server (let's call it Server A)**: This is where your web application is initially deployed and running.
 
 2. **Create a cluster at Server A**: In a Windows Server environment, you can create a server cluster using technologies like Windows Server Failover Clustering (WSFC). This cluster groups Server A with another server (Server B) to provide high availability and fault tolerance.
+
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB01.png?raw=true" />
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB02.png?raw=true" />
+<img src="https://github.com/potatoscript/MyDocuments/blob/main/NLB03.png?raw=true" />
 
 3. **Set up a network load balancer (NLB) on Server A**: You configure the NLB to distribute incoming traffic between Server A and Server B. The NLB monitors the health of both servers.
 
